@@ -19,12 +19,12 @@ GEM_HOME=build/gems
 QUIET=@
 
 # OS-specific options
-TARCHECK=$(shell tar --help|grep wildcard|wc -l)
-ifeq (0, $(TARCHECK))
+# TARCHECK=$(shell tar --help|grep wildcard|wc -l)
+# ifeq (0, $(TARCHECK))
 TAR_OPTS=
-else
-TAR_OPTS=--wildcards
-endif
+# else
+#TAR_OPTS=--wildcards
+# endif
 
 default: jar
 
